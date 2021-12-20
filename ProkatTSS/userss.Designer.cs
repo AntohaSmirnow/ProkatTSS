@@ -1,6 +1,6 @@
 ﻿namespace ProkatTSS
 {
-    partial class MotoForm
+    partial class userss
     {
         /// <summary>
         /// Required designer variable.
@@ -29,98 +29,92 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MotoForm));
-            this.closeButton = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(userss));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.kyrsachDataSet1 = new ProkatTSS.kyrsachDataSet1();
-            this.motoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.motoTableAdapter = new ProkatTSS.kyrsachDataSet1TableAdapters.motoTableAdapter();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter = new ProkatTSS.kyrsachDataSet1TableAdapters.usersTableAdapter();
             this.tableAdapterManager = new ProkatTSS.kyrsachDataSet1TableAdapters.TableAdapterManager();
-            this.motoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.usersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.motoDataGridView = new System.Windows.Forms.DataGridView();
+            this.usersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.motoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.usersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.kyrsachDataSet2 = new ProkatTSS.kyrsachDataSet2();
+            this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter1 = new ProkatTSS.kyrsachDataSet2TableAdapters.usersTableAdapter();
+            this.tableAdapterManager1 = new ProkatTSS.kyrsachDataSet2TableAdapters.TableAdapterManager();
             this.MainPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kyrsachDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.motoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.motoBindingNavigator)).BeginInit();
-            this.motoBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.motoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingNavigator)).BeginInit();
+            this.usersBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kyrsachDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.BackColor = System.Drawing.Color.Yellow;
+            this.MainPanel.Controls.Add(this.usersDataGridView);
+            this.MainPanel.Controls.Add(this.panel2);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(843, 450);
+            this.MainPanel.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Blue;
+            this.panel2.Controls.Add(this.closeButton);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(843, 124);
+            this.panel2.TabIndex = 0;
             // 
             // closeButton
             // 
             this.closeButton.AutoSize = true;
             this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.closeButton.Location = new System.Drawing.Point(929, 0);
+            this.closeButton.Location = new System.Drawing.Point(780, 0);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(20, 20);
             this.closeButton.TabIndex = 1;
             this.closeButton.Text = "X";
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.BackColor = System.Drawing.Color.Yellow;
-            this.MainPanel.Controls.Add(this.motoDataGridView);
-            this.MainPanel.Controls.Add(this.panel2);
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(800, 450);
-            this.MainPanel.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Blue;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.closeButton);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 124);
-            this.panel2.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(780, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(279, 39);
+            this.label1.Location = new System.Drawing.Point(300, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 42);
+            this.label1.Size = new System.Drawing.Size(143, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Мотоциклы";
+            this.label1.Text = "Юзеры";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // kyrsachDataSet1
@@ -128,31 +122,31 @@
             this.kyrsachDataSet1.DataSetName = "kyrsachDataSet1";
             this.kyrsachDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // motoBindingSource
+            // usersBindingSource
             // 
-            this.motoBindingSource.DataMember = "moto";
-            this.motoBindingSource.DataSource = this.kyrsachDataSet1;
+            this.usersBindingSource.DataMember = "users";
+            this.usersBindingSource.DataSource = this.kyrsachDataSet1;
             // 
-            // motoTableAdapter
+            // usersTableAdapter
             // 
-            this.motoTableAdapter.ClearBeforeFill = true;
+            this.usersTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.autoTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.motoTableAdapter = this.motoTableAdapter;
+            this.tableAdapterManager.motoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ProkatTSS.kyrsachDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.usersTableAdapter = null;
+            this.tableAdapterManager.usersTableAdapter = this.usersTableAdapter;
             this.tableAdapterManager.vehiclesTableAdapter = null;
             // 
-            // motoBindingNavigator
+            // usersBindingNavigator
             // 
-            this.motoBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.motoBindingNavigator.BindingSource = this.motoBindingSource;
-            this.motoBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.motoBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.motoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usersBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.usersBindingNavigator.BindingSource = this.usersBindingSource;
+            this.usersBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.usersBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.usersBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -164,17 +158,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.motoBindingNavigatorSaveItem});
-            this.motoBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.motoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.motoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.motoBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.motoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.motoBindingNavigator.Name = "motoBindingNavigator";
-            this.motoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.motoBindingNavigator.Size = new System.Drawing.Size(800, 25);
-            this.motoBindingNavigator.TabIndex = 3;
-            this.motoBindingNavigator.Text = "bindingNavigator1";
+            this.usersBindingNavigatorSaveItem});
+            this.usersBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.usersBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.usersBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.usersBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.usersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.usersBindingNavigator.Name = "usersBindingNavigator";
+            this.usersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.usersBindingNavigator.Size = new System.Drawing.Size(843, 25);
+            this.usersBindingNavigator.TabIndex = 5;
+            this.usersBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorSeparator
             // 
@@ -207,37 +201,52 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // motoDataGridView
+            // usersDataGridView
             // 
-            this.motoDataGridView.AutoGenerateColumns = false;
-            this.motoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.motoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.usersDataGridView.AutoGenerateColumns = false;
+            this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.usersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.motoDataGridView.DataSource = this.motoBindingSource;
-            this.motoDataGridView.Location = new System.Drawing.Point(86, 152);
-            this.motoDataGridView.Name = "motoDataGridView";
-            this.motoDataGridView.Size = new System.Drawing.Size(344, 143);
-            this.motoDataGridView.TabIndex = 1;
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.usersDataGridView.DataSource = this.usersBindingSource;
+            this.usersDataGridView.Location = new System.Drawing.Point(98, 147);
+            this.usersDataGridView.Name = "usersDataGridView";
+            this.usersDataGridView.Size = new System.Drawing.Size(547, 180);
+            this.usersDataGridView.TabIndex = 1;
+            this.usersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usersDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoMoto";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NoMoto";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NameMoto";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NameMoto";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "login";
+            this.dataGridViewTextBoxColumn2.HeaderText = "login";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "TypeTS";
-            this.dataGridViewTextBoxColumn3.HeaderText = "TypeTS";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "pass";
+            this.dataGridViewTextBoxColumn3.HeaderText = "pass";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn4.HeaderText = "name";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "surname";
+            this.dataGridViewTextBoxColumn5.HeaderText = "surname";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -293,34 +302,59 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
-            // motoBindingNavigatorSaveItem
+            // usersBindingNavigatorSaveItem
             // 
-            this.motoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.motoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("motoBindingNavigatorSaveItem.Image")));
-            this.motoBindingNavigatorSaveItem.Name = "motoBindingNavigatorSaveItem";
-            this.motoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.motoBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.motoBindingNavigatorSaveItem.Click += new System.EventHandler(this.motoBindingNavigatorSaveItem_Click);
+            this.usersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.usersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("usersBindingNavigatorSaveItem.Image")));
+            this.usersBindingNavigatorSaveItem.Name = "usersBindingNavigatorSaveItem";
+            this.usersBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.usersBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.usersBindingNavigatorSaveItem.Click += new System.EventHandler(this.usersBindingNavigatorSaveItem_Click);
             // 
-            // MotoForm
+            // kyrsachDataSet2
+            // 
+            this.kyrsachDataSet2.DataSetName = "kyrsachDataSet2";
+            this.kyrsachDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usersBindingSource1
+            // 
+            this.usersBindingSource1.DataMember = "users";
+            this.usersBindingSource1.DataSource = this.kyrsachDataSet2;
+            // 
+            // usersTableAdapter1
+            // 
+            this.usersTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.autoTableAdapter = null;
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.motoTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = ProkatTSS.kyrsachDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.usersTableAdapter = this.usersTableAdapter1;
+            this.tableAdapterManager1.vehiclesTableAdapter = null;
+            // 
+            // userss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.motoBindingNavigator);
+            this.ClientSize = new System.Drawing.Size(843, 450);
+            this.Controls.Add(this.usersBindingNavigator);
             this.Controls.Add(this.MainPanel);
-            this.Name = "MotoForm";
-            this.Text = "MotoForm";
-            this.Load += new System.EventHandler(this.MotoForm_Load);
+            this.Name = "userss";
+            this.Text = "userss";
+            this.Load += new System.EventHandler(this.userss_Load);
             this.MainPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kyrsachDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.motoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.motoBindingNavigator)).EndInit();
-            this.motoBindingNavigator.ResumeLayout(false);
-            this.motoBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.motoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingNavigator)).EndInit();
+            this.usersBindingNavigator.ResumeLayout(false);
+            this.usersBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kyrsachDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,16 +362,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private kyrsachDataSet1 kyrsachDataSet1;
-        private System.Windows.Forms.BindingSource motoBindingSource;
-        private kyrsachDataSet1TableAdapters.motoTableAdapter motoTableAdapter;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private kyrsachDataSet1TableAdapters.usersTableAdapter usersTableAdapter;
         private kyrsachDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator motoBindingNavigator;
+        private System.Windows.Forms.BindingNavigator usersBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -349,10 +382,16 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton motoBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView motoDataGridView;
+        private System.Windows.Forms.ToolStripButton usersBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView usersDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private kyrsachDataSet2 kyrsachDataSet2;
+        private System.Windows.Forms.BindingSource usersBindingSource1;
+        private kyrsachDataSet2TableAdapters.usersTableAdapter usersTableAdapter1;
+        private kyrsachDataSet2TableAdapters.TableAdapterManager tableAdapterManager1;
     }
 }

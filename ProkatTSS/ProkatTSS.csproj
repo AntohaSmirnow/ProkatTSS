@@ -69,6 +69,21 @@
     <Compile Include="GirosForm.Designer.cs">
       <DependentUpon>GirosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="kyrsachDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kyrsachDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kyrsachDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kyrsachDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kyrsachDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kyrsachDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +127,12 @@
     </Compile>
     <Compile Include="Simulation.Designer.cs">
       <DependentUpon>Simulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userss.Designer.cs">
+      <DependentUpon>userss.cs</DependentUpon>
     </Compile>
     <Compile Include="VeloForm.cs">
       <SubType>Form</SubType>
@@ -159,9 +180,45 @@
     <EmbeddedResource Include="Simulation.resx">
       <DependentUpon>Simulation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userss.resx">
+      <DependentUpon>userss.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VeloForm.resx">
       <DependentUpon>VeloForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="kyrsachDataSet.xsc">
+      <DependentUpon>kyrsachDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kyrsachDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kyrsachDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kyrsachDataSet.xss">
+      <DependentUpon>kyrsachDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kyrsachDataSet1.xsc">
+      <DependentUpon>kyrsachDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kyrsachDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kyrsachDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kyrsachDataSet1.xss">
+      <DependentUpon>kyrsachDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kyrsachDataSet2.xsc">
+      <DependentUpon>kyrsachDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kyrsachDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kyrsachDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kyrsachDataSet2.xss">
+      <DependentUpon>kyrsachDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

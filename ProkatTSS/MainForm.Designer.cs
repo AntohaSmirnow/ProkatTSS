@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LeaveButton = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.MainPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,16 @@
             this.MainPanel.Size = new System.Drawing.Size(949, 504);
             this.MainPanel.TabIndex = 1;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(48, 248);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(182, 58);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Симуляция";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -108,16 +119,6 @@
             this.label1.Text = "Главная страница";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(48, 248);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 58);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Симуляция";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // MainFormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,5 +145,6 @@
         private System.Windows.Forms.Label LeaveButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

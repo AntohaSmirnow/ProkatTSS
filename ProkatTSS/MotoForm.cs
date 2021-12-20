@@ -23,6 +23,19 @@ namespace ProkatTSS
            // Application.Exit();
         }
 
-       
+        private void motoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.motoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.kyrsachDataSet1);
+
+        }
+
+        private void MotoForm_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "kyrsachDataSet1.moto". При необходимости она может быть перемещена или удалена.
+            this.motoTableAdapter.Fill(this.kyrsachDataSet1.moto);
+
+        }
     }
 }
